@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="GetData"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/parse_access_log"
+        />
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/mainTable"
+        android:orientation="vertical"
+        android:stretchColumns="*"
+        android:collapseColumns="3">
+        <TableRow
+            android:id="@+id/row1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+
+                android:id="@+id/ipAddress"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="#b0b0b0"
+
+                android:padding="18dip"
+                android:text="@string/ipaddress"
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+            <TextView
+
+                android:id="@+id/pagesVisited"
+                android:layout_width="0dp"
+
+                android:layout_height="wrap_content"
+                android:background="#FF0000"
+                android:padding="18dip"
+
+
+                android:text="@string/pages"
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+            <TextView
+
+                android:id="@+id/countSequence"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+
+                android:background="#FF0000"
+                android:padding="18dip"
+                android:text="@string/count"
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

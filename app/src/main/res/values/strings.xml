@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">InspiringApps</string>
+    <string name="ipaddress">IpAddress</string>
+    <string name="pages">Pages</string>
+    <string name="count">Count</string>
+    <string name="parse_access_log">Parse Access Log</string>
+</resources>
